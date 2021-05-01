@@ -20,6 +20,9 @@ class AdsbygoogleServiceProvider extends ServiceProvider
         Blade::directive('pushadsbygoogle', function ($expression) {
             return '<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>';
         });
+        Blade::directive('anchoradsbygoogle', function ($expression) {
+            return '<script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "'.config('adsbygoogle.client_id').'",enable_page_level_ads: true,overlays: {bottom: true}});</script>';
+        });
 
         $sourceViewsPath = __DIR__.'/../resources/views';
         $this->loadViewsFrom($sourceViewsPath, 'adsbygoogle');

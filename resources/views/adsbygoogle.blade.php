@@ -11,6 +11,9 @@
     @if(isset($ad_format))
     data-ad-format="{!! $ad_format !!}"
     @endif
+    @if(isset($ad_layout))
+    data-ad-layout="{!! $ad_layout !!}"
+    @endif
     @if(isset($ad_full_width_responsive))
     data-full-width-responsive="{!! $ad_full_width_responsive !!}"
     @endif

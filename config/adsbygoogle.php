@@ -9,8 +9,14 @@ return [
             'ad_full_width_responsive' => true
         ],
         'rectangle' => [
-            'ad_slot' => 1234567890,
+            'ad_slot' => 5681560223,
             'ad_style' => 'display:inline-block;width:300px;height:250px',
+        ],
+        'inArticle' => [
+            'ad_layout' => 'in-article',
+            'ad_format' => 'fluid',
+            'ad_slot' => 5149408889,
+            'ad_style' => 'display:block; text-align:center;'
         ]
     ]
 ];
