@@ -12,7 +12,9 @@ composer require leonardcodep/laravel-adsbygoogle
 
 ### Set up config file
 
-Run `php artisan vendor:publish`.
+Run `php artisan vendor:publish --provider="Leonardcodep\Adsbygoogle\AdsbygoogleServiceProvider" --tag="config"`.
+
+Run (Optional) `php artisan vendor:publish --provider="Leonardcodep\Adsbygoogle\AdsbygoogleServiceProvider" --tag="views"`.
 
 Edit the generated config file in `/config/adsbygoogle.php` to add your ad units
 
@@ -40,4 +42,17 @@ This package is for Laravel 5.5+ so it takes advantage of auto discover, so no m
 
 
 ## Usage
+
+Copy and paste this code into your website's HTML, between the <head> and </head> tags.
+
+```blade
+    @scriptadsbygoogle
+```
+
+Copy and paste this code into your website's HTML, at the end before closing the and </body> tag.
+
+```blade
+    @pushadsbygoogle
+```
+
 To show ads in your blade templates simply use `{!! Adsbygoogle::show('responsive') !!}` , for example.

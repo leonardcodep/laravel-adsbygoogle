@@ -2,7 +2,9 @@
     "name": "leonardcodep/laravel-adsbygoogle",
     "description": "Display Google Adsense ads in your Laravel.",
     "keywords": ["framework", "laravel","Google Adsense"],
+    "homepage": "https://github.com/leonardcodep/laravel-adsbygoogle",
     "type": "library",
+    "version": "0.1.16",
     "require": {
         "php": "^7.2"
     },
