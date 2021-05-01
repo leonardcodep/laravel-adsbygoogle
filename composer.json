@@ -1,0 +1,35 @@
+{
+    "name": "leonardcodep/laravel-adsbygoogle",
+    "description": "Display Google Adsense ads in your Laravel.",
+    "keywords": ["framework", "laravel","Google Adsense"],
+    "type": "library",
+    "require": {
+        "php": "^7.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leonardo Manuel Alvarez",
+            "email": "leonadomanuel.alv@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Leonardcodep\\Adsbygoogle\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Leonardcodep\\Adsbygoogle\\AdsbygoogleServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
