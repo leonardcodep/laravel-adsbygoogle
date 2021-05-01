@@ -43,13 +43,13 @@ This package is for Laravel 5.5+ so it takes advantage of auto discover, so no m
 
 ## Usage
 
-Copy and paste this code into your website's HTML, between the <head> and </head> tags.
+Copy and paste this code into your website's HTML, between the  `<head> and </head> ` tags.
 
 ```blade
     @scriptadsbygoogle
 ```
 
-Copy and paste this code into your website's HTML, at the end before closing the and </body> tag.
+Copy and paste this code into your website's HTML, at the end before closing the and  `</body> ` tag.
 
 ```blade
     @pushadsbygoogle
